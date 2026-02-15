@@ -66,7 +66,6 @@
         font-size: 0.8rem !important;
     }
 
-    /* Sonuç Ekranı */
     #result-container {
         flex-direction: column !important;
         width: 100% !important;
@@ -74,7 +73,7 @@
 
     #result-container img {
         width: 100% !important;
-        max-width: 320px; /* Afiş çok büyük olup ekranı kaplamasın */
+        max-width: 320px; 
         height: auto !important;
         border-radius: 15px !important;
         border: 3px solid #eee !important;
@@ -94,7 +93,7 @@
     }
 
     #summary {
-        max-height: 100px; /* Metin çok uzunsa ekranı patlatmasın */
+        height: auto !important;
         overflow-y: auto;
         font-size: 0.8rem !important;
     }
@@ -112,7 +111,10 @@
 
         #main-container {
             margin: 20px auto;
-            position: relative;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
             background-color: #0B0E14;
             width: 35rem;
             height: 34em;
