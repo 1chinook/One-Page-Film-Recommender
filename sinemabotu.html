@@ -7,6 +7,98 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Share+Tech&display=swap');
+        
+@media (max-width: 600px) {
+    #main-container {
+        width: 90vw !important; 
+        max-width: 350px;      
+        height: auto !important;
+        min-height: 500px;
+        flex-direction: column !important;
+        border-radius: 20px !important;
+        margin: 20px auto !important;
+        padding: 15px !important;
+        box-shadow: 0px 10px 30px rgba(0,0,0,0.5) !important;
+    }
+
+    #point-container {
+        width: 100% !important;
+        height: auto !important;
+        flex-direction: column !important;
+        padding: 10px 0 !important;
+    }
+
+    #slider {
+        rotate: 0deg !important; 
+        transform: none !important;
+        width: 100% !important; 
+        margin: 20px 0 !important;
+    }
+
+    #point-container div {
+        transform: none !important;
+        position: static !important;
+        margin: 5px 0 !important;
+    }
+
+    #category-container {
+        grid-template-columns: repeat(3, 1fr) !important; 
+        gap: 25px !important;
+        margin: 10px 0 !important;
+        width: 100% !important;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+
+    .category {
+        width: 115% !important; 
+        height: 100px !important;
+    }
+
+    .category img {
+        width: 60px !important;
+        height: 60px !important;
+        top: 15px !important;
+    }
+
+    .category h4 {
+        font-size: 0.8rem !important;
+    }
+
+    /* Sonuç Ekranı */
+    #result-container {
+        flex-direction: column !important;
+        width: 100% !important;
+    }
+
+    #result-container img {
+        width: 100% !important;
+        max-width: 320px; /* Afiş çok büyük olup ekranı kaplamasın */
+        height: auto !important;
+        border-radius: 15px !important;
+        border: 3px solid #eee !important;
+    }
+
+    #right-section {
+        width: 100% !important;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 0 !important;
+    }
+
+    #right-section h2 {
+        font-size: 1.3rem !important;
+        margin-top: 10px !important;
+    }
+
+    #summary {
+        max-height: 100px; /* Metin çok uzunsa ekranı patlatmasın */
+        overflow-y: auto;
+        font-size: 0.8rem !important;
+    }
+}
         body {
             background-color: black;
         }
@@ -19,10 +111,8 @@
         }
 
         #main-container {
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            position: absolute;
+            margin: 20px auto;
+            position: relative;
             background-color: #0B0E14;
             width: 35rem;
             height: 34em;
